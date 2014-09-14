@@ -7,7 +7,7 @@ RUN apt-get update && \
 	apt-get clean && \
 	easy_install -U distribute
 
-# Install pycharm helpers, use svn to retrieve get the folder (who would of know svn had a use)
+# Install pycharm helpers, use svn to retrieve get the folder
 RUN svn checkout https://github.com/JetBrains/intellij-community/trunk/python/helpers
 RUN	mv /helpers /root/.pycharm_helpers
 
